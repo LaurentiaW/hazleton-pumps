@@ -18,8 +18,7 @@
                     $date = get_field ( 'date');
                     $certificate = get_field ( 'certificate');
                     $press_clipping = get_field (
-                    'press_clipping'); 
-                    $size = "full"; ?>
+                    'press_clipping');  ?>
 
             <div class="ws-40"></div>
                 <div class="container">

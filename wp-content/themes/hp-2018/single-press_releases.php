@@ -1,11 +1,6 @@
 <?php 
 /**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme and one
- * of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query,
- * e.g., it puts together the home page when no home.php file exists.
+ * The is the template page for custom post types press releases
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
@@ -18,9 +13,44 @@
         get_header(); ?>
 
             <div class="container">
-                <?php if ( have_posts() ) : while ( have_posts() ): the_post(); ?>
-                	<h1>This is my press release single page </h1>
-                <p><?php the_content(); ?></p>
+                <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
+                    $date = get_field ( 'date');
+                    $primg1 = get_field ( 'primg1' );
+                    $primg2 = get_field ( 'primg2');
+                    $primg3 = get_field ( 'primg3');
+                    $size = "full";
+                ?>
+
+                <div class="ws-40"></div>
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h1><?php the_title(); ?></h1> 
+                            <p><?php echo $date; ?></p>
+                        </div>
+                    </div>
+                <div class="ws-40"></div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <p><?php the_content(); ?></p>
+                    </div>
+                    <div class="col-md-5">
+                        <?php if($primg1) { 
+                                echo wp_get_attachment_image ($primg1, $size );
+                            } ?>
+                        
+                        <?php if($primg2) { 
+                                echo wp_get_attachment_image ($primg2, $size );
+                            } ?>
+
+                        <?php if($primg3) { 
+                                echo wp_get_attachment_image ($primg3, $size );
+                            } ?>
+                    </div>
+                    
+                </div>
+                
 
                 <?php endwhile; else: ?>
 
@@ -29,6 +59,9 @@
                 <?php endif; ?>
             </div>
 
+            <div class="ws-40"></div>
+        </div>
+    </div>
         <?php get_footer(); ?>
         
 

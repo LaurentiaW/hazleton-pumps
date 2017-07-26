@@ -20,6 +20,7 @@
                     $img1 = get_field( 'img1');
                     $img2 = get_field( 'img2');
                     $img3 = get_field( 'img3');
+                    $size = "full";
                 ?>
                  <div class="row">
                     <div class="col-md-12">
@@ -32,17 +33,18 @@
 
                 <div class="col-md-3  col-sm-6 col-xs-6">
                     <div class="case-study-img">
-                        <?php if($img1) { ?>
-                            <img src="<?php echo $img1 ?>"/>
-                        <?php } ?>
+             
+                        <?php if($img1) { 
+                            echo wp_get_attachment_image( $img1, $size ); 
+                         } ?>
 
-                        <?php if($img2) { ?>
-                            <img src="<?php echo $img2 ?>"/>
-                        <?php } ?>
+                        <?php if($img2) { 
+                            echo wp_get_attachment_image( $img2, $size );
+                        } ?>
 
-                        <?php if($img3) { ?>
-                            <img src="<?php echo $img3 ?>"/>
-                        <?php } ?>
+                        <?php if($img3) { 
+                            echo wp_get_attachment_image( $img3, $size );
+                        } ?>
                         
                     </div>
                 </div>

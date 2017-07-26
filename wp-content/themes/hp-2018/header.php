@@ -15,7 +15,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Industi - Ultimate Responsive Industry &amp; Construction WordPress theme</title>
+        <title><?php wp_title(); ?></title>
         <?php wp_head(); ?>
 
         <meta name="description" content="">
