@@ -72,7 +72,7 @@ function create_custom_post_types() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'press_releases'
+				'slug' => 'press-releases'
 				),
 			)
 		);
@@ -88,7 +88,55 @@ function create_custom_post_types() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'press_clip'
+				'slug' => 'press-clip'
+				),
+			)
+		);
+
+	//create a pumping system custom post type 
+	register_post_type (
+		'pump_system',
+		array(
+			'labels' => array(
+				'name' => __( 'Pump Systems' ),
+				'singular_name' => __('Pump System')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'pump-system'
+				),
+			)
+		);
+
+	//create a pump configuration custom post type 
+	register_post_type (
+		'pump_configuration',
+		array(
+			'labels' => array(
+				'name' => __( 'Pumps Configuration' ),
+				'singular_name' => __('Pump Configuration')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'pump-configuration'
+				),
+			)
+		);
+
+	//create a pump curves custom post type 
+	register_post_type (
+		'pump_curves',
+		array(
+			'labels' => array(
+				'name' => __( 'Pump Curves' ),
+				'singular_name' => __('Pump Curves')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'pump-curves'
 				),
 			)
 		);

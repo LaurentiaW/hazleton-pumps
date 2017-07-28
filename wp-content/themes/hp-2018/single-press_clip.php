@@ -13,12 +13,11 @@
             <div class="container">
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
 
-                    $awarded_by = get_field ( 'awarded_by');
-                    $category = get_field ( 'category' );
-                    $date = get_field ( 'date');
-                    $certificate = get_field ( 'certificate');
-                    $press_clipping = get_field (
-                    'press_clipping');  ?>
+                    $publication = get_field ( 'publication');
+                    $published_date = get_field ( 'published_date' );
+                    $image = get_field ( 'image');
+                    $visit_publication = get_field ( 'visit_publication');
+                    $size = "full"  ?>
 
             <div class="ws-40"></div>
                 <div class="container">
@@ -30,26 +29,24 @@
                     </div>
          
                     <ul class="ul no-spaces row">
-                        <li class="list-col-md-4"><strong>Awarded by:</strong><br> <?php echo $awarded_by; ?> </li>
-                        <li class="list-col-md-4"><strong>Category:</strong><br> <?php echo $category; ?> </li>
-                        <li class="list-col-md-4"><strong>Date:</strong> <br> <?php echo $date; ?> </li>
+                        <li class="list-col-md-4"><strong>Publication:</strong><br> <?php echo $publication; ?> </li>
+                        <li class="list-col-md-4"><strong>Publication Date:</strong><br> <?php echo $published_date; ?> </li>
+
+                        <li class="list-col-md-4"><strong><a href="<?php echo $visit_publication; ?>">Visit publication</a></strong>  </li>
                     </ul>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12">
                              
 
 
-                            <?php if($certificate) { 
-                                echo wp_get_attachment_image ($certificate, $size );
+                            <?php if($image) { 
+                                echo wp_get_attachment_image ($image, $size );
                             } ?>
                         </div>
-                        <div class="col-md-6">
-                            <?php if($press_clipping) { 
-                                echo wp_get_attachment_image ($press_clipping, $size );
-                            } ?>
-                        </div>
+                       
                     </div>
                 </div>
+
 
                 <div class="ws-50"></div>
                 	
@@ -62,6 +59,6 @@
 
                 <?php endif; ?>
             </div>
-
+        </div>
         <?php get_footer(); ?>
         
