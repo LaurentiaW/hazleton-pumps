@@ -95,7 +95,7 @@ function create_custom_post_types() {
 
 	//create a pumping system custom post type 
 	register_post_type (
-		'pump_system',
+		'pump_systems',
 		array(
 			'labels' => array(
 				'name' => __( 'Pump Systems' ),
@@ -104,7 +104,7 @@ function create_custom_post_types() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'pump-system'
+				'slug' => 'pump-systems'
 				),
 			)
 		);
@@ -209,5 +209,5 @@ add_action('init', 'hippo2018_register_theme_menus');
 
 add_action ( 'wp_enqueue_scripts', 'hippo2018_theme_js');
 
-
 ?>
+

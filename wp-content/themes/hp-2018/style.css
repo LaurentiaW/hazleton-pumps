@@ -4,6 +4,50 @@
 	padding-bottom: 20px;
 }
 
-.pump-system-img ul {
+/*pump systems */
+
+ .pump-system-img ul {
+ 	list-style: none;
+ }
+
+ 
+
+.pump-system-img ul li {
+    padding-bottom: 15px;
+}
+
+.pump-sys-img {
+	margin: auto;
+}
+
+.pump-system-content ul {
 	list-style: none;
+}
+.pump-sys-img a img {
+	display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.button {
+    width: 625px;
+    margin: auto;
+    background-color: #bf2128;
+    columns: #fff;
+}
+
+.center p {
+	text-align: center;
+}
+
+/* pump systems front-page*/
+
+.pump-systems  {
+    float: left;
+    width: 40%;
+}
+.pump-systems-img {
+    float: left;
+    width: 45%;
+
 }

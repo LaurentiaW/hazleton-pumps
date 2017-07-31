@@ -35,8 +35,8 @@
                     </div>
                 <div class="ws-40"></div>
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul class="pump-system-img">
+                    <div class="col-md-6 pump-system-img">
+                        <ul>
                             <li>
                                 <?php if($diagram) { 
                                 echo wp_get_attachment_image ($diagram, $size );
@@ -53,6 +53,7 @@
 
                     <div class="col-md-6">
                         <ul>
+                            <li><strong>Summary:</strong><br><?php the_content(); ?></li>
                             <li><strong>Objective:</strong><br><?php echo $objective; ?></li>
                             <li><strong>Operation:</strong><br><?php echo $operation; ?></li>
                             <li><strong>Application:</strong><br><?php echo $application; ?></li>

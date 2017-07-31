@@ -78,22 +78,32 @@
                 </div>
 
                 <ul class="ul no-spaces row">
-                    <li class="list-col-md-6">
-                        <div class="single-service">
-                            <a href="solution-single.html">
-                                <h3>High Head High Volume Medium High Voltage Pump System</h3>
-                                <div class="serv-img-wrap">
-                                    <p class="pump-systems">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu fdio </p>
-                                    <img class="pump-systems-img" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/series-pumping-systems.jpg" alt="High Head High Volume Medium High Voltage Pump System">
-                                </div>
-                            </a>
-                            
-                            
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
+                    <?php query_posts('posts_per_page=4&post_type=pump_systems'); ?>
+                        <?php while ( have_posts() ) : the_post(); 
+                            $diagram = get_field ( 'diagram');
+                            $size = "medium";
+                            ?>
 
-
+                            <li class="list-col-md-6">
+                                <div class="single-service"> 
+                                    <h3><a href="<?php the_permalink (); ?>"><?php echo wp_trim_words( get_the_title(), 6 ); ?></a></h3>
+                                    <div class="serv-img-wrap">
+                                        <article class="pump-systems"> 
+                                            <p><?php the_excerpt(); ?> </p>
+                                             <a href="<?php the_permalink (); ?>">More &raquo; </a>
+                                        </article>
+                                        <figure class="pump-systems-img">
+                                           <a href="<?php the_permalink (); ?>">
+                                                <?php  if($diagram ) { 
+                                                    echo wp_get_attachment_image ($diagram, $size);
+                                                } ?>   
+                                            </a>
+                                        </figure>
+                                    </div>       
+                                </div>                    
+                            </li>
+                    <?php endwhile; ?> 
+<!--
                     <li class="list-col-md-6">
                         <div class="single-service">
                             <a href="solution-single.html">
@@ -107,7 +117,7 @@
                            
                         </div>
                         <!-- single service Series Pump System  -->
-                    </li>
+           <!--         </li>
 
 
                     <li class="list-col-md-6">
@@ -122,7 +132,7 @@
                            
                         </div>
                         <!-- single service Mine Dewatering System -->
-                    </li>
+        <!--            </li>
 
 
                     <li class="list-col-md-6">
@@ -137,7 +147,7 @@
                             
                         </div>
                         <!-- single service Flameproof Systems -->
-                    </li>
+  <!--                  </li>-->
                 </ul>
             </div>
         </section>
