@@ -109,18 +109,34 @@ function create_custom_post_types() {
 			)
 		);
 
-	//create a pump configuration custom post type 
+	//create a hippo submersible slurry pump range custom post type 
 	register_post_type (
-		'pump_configuration',
+		'submersibles',
 		array(
 			'labels' => array(
-				'name' => __( 'Pumps Configuration' ),
-				'singular_name' => __('Pump Configuration')
+				'name' => __( 'Submersible Slurry Pumps' ),
+				'singular_name' => __('Submersible Slurry Pump')
 				),
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'pump-configuration'
+				'slug' => 'hippo-submersible-slurry-pump-range'
+				),
+			)
+		);
+
+	//create a hippo vertical slurry pump range custom post type 
+	register_post_type (
+		'verticals',
+		array(
+			'labels' => array(
+				'name' => __( 'Vertical Slurry Pumps' ),
+				'singular_name' => __('Vertical Slurry Pump')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'hippo-vertical-slurry-pump-range'
 				),
 			)
 		);

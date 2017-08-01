@@ -103,54 +103,9 @@
                                 </div>                    
                             </li>
                     <?php endwhile; ?> 
-<!--
-                    <li class="list-col-md-6">
-                        <div class="single-service">
-                            <a href="solution-single.html">
-                            <h3><br> Series Pump System</h3>
-                            <div class="serv-img-wrap">
-                                 <p class="pump-systems">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex </p>
-                                <img class="pump-systems-img" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/series-pumping-systems.jpg" alt="Series Pumping System">
-                            </div>
-
-                            </a>
-                           
-                        </div>
-                        <!-- single service Series Pump System  -->
-           <!--         </li>
-
-
-                    <li class="list-col-md-6">
-                        <div class="single-service">
-                            <a href="solution-single.html">
-                                <h3>Mine Dewatering System <br></h3>
-                            <div class="serv-img-wrap">
-                                 <p class="pump-systems">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. </p>
-                                <img class="pump-systems-img" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/series-pumping-systems.jpg" alt="Mine Dewatering System">
-                            </div>
-                            </a>
-                           
-                        </div>
-                        <!-- single service Mine Dewatering System -->
-        <!--            </li>
-
-
-                    <li class="list-col-md-6">
-                        <div class="single-service">
-                            <a href="solution-single.html">
-                              <h3>Flameproof Systems</h3>
-                            <div class="serv-img-wrap">
-                                <p class="pump-systems">Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare  </p>
-                                <img class="pump-systems-img" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/series-pumping-systems.jpg" alt="Flameproof Systems">
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <!-- single service Flameproof Systems -->
-  <!--                  </li>-->
                 </ul>
-            </div>
-        </section>
+        </div>
+    </section>
         <!--====  End of SERVICES AREA  ====-->
         
         <div class="ws-50"></div>
