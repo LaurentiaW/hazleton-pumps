@@ -23,12 +23,7 @@
                     </div>
                 </div>
 				
-				<?php while ( have_posts() ) : the_post();
-				 	$awarded_by = get_field ( 'awarded_by');
-                    $category = get_field ( 'category' );
-                    $certificate = get_field ( 'certificate');
-                    $date = get_field ( 'date');
-			 ?>
+				
 			
 				<table class="case-studies">
 					<tr>
@@ -37,35 +32,25 @@
     					<th>Category</th>
     					<th>Date</th>
   					</tr>
+                    <?php while ( have_posts() ) : the_post();
+                    $awarded_by = get_field ( 'awarded_by');
+                    $category = get_field ( 'category' );
+                    $certificate = get_field ( 'certificate');
+                    $date = get_field ( 'date');
+             ?>
   					<tr>
   						<td><a href="<?php the_permalink (); ?>"><?php the_title(); ?></a></td>
     					<td><a href="<?php the_permalink (); ?>"><?php echo $awarded_by; ?></a></td>
     					<td><a href="<?php the_permalink (); ?>"><?php echo $category; ?></a></td>
     					<td><a href="<?php the_permalink (); ?>"><?php echo $date; ?></a></td>
-    				</tr>					
+    				</tr>	
+                    <?php endwhile; // end of the loop. ?>				
 				</table>
 
 			
 			</div>
-			<div class="ws-50"></div>
-
-                <div class="featured-slider">
-                    <div id="featured_slider" class="owl-carousel owl-theme">
-                        <div class="item sf-project">
-                         	<img src="<?php echo $certificate; ?>"/>
-                         	
-                           
-                            <div class="overlay">
-                            	<a href="<?php the_permalink (); ?>"><?php the_title(); ?></a>
-                            </div>
-                        </div> <!-- item -->
-                                      
-                    </div>
-                </div> <!-- / featured slider -->
-
-
-	
-			<?php endwhile; // end of the loop. ?>
+			
+			
 
 			<div class="ws-50">
 				

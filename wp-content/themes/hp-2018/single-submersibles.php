@@ -107,7 +107,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="header-request-quote">
-                                <a class="btn btn-style1" href="../../contact.php" role="button">Contact our sales team »</a>
+                                <a class="btn btn-style1" href="http://localhost/hp-2018/contact/" role="button">Contact our sales team »</a>
                             </div>
                         </div>    
                     </div>  

@@ -85,7 +85,7 @@
                     </div>
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="header-request-quote">
-                            <a href="" class="btn btn-style1"><strong> Request a quote</strong></a>
+                            <a href="http://localhost/hp-2018/quote/" target="_blank" class="btn btn-style1"><strong> Request a quote</strong></a>
                         </div>
                     </div>
                 </div>
@@ -104,66 +104,7 @@
 
 
                         ?>
-                      <!--  <ul id="menu" class="clearfix navbar-nav">
-                            <li class="current-menu-item"><a href="index.html">Home</a></li>
-                            <li class="menu-item-has-children">
-                                <a href="solutions.html">Pump Systems</a>
-                                <ul class="sub-menu">
-                                    <li><a href="solution-single.html">High Head High Volume Medium High Voltage Submersible Slurry Pump Systems</a></li>
-                                    <li><a href="agricultural-processing.html">Series Pumping Systems</a></li>
-                                    <li><a href="phamrmaceutical-research.html">Mine Dewatering Systems</a></li>
-                                    <li><a href="power-and-energy.html">Flameproof Systems</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu-item-has-children">
-                                <a href="projects.html">Hippo Range</a>
-                                <ul class="sub-menu">
-                                    <li><a href="projects.html">Hippo Slurry Pump Range</a></li>
-                                    <li class="menu-item-has-children">
-                                        <a href="#">Vertical Slurry Pump Range</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Vertical Top Spindle</a></li>
-                                            <li><a href="#">Vertical Bottom Spindle</a></li>
-                                             <li><a href="#">Vertical Bottom Discharge</a></li>
-                                            <li><a href="#">Vertical Vortex</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="menu-item-has-children">
-                                       <a href="#">Submersible Slurry Pump Range</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Submersible Top Suction</a></li>
-                                            <li><a href="#">Submersible Bottom Suction</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                             <li class="menu-item-has-children">
-                                <a href="solutions.html">Resources</a>
-                                <ul class="sub-menu">
-                                    <li><a href="solution-single.html">Case Studies</a></li>
-                                    <li><a href="agricultural-processing.html">Pump Curves</a></li>
-                                    <li><a href="phamrmaceutical-research.html">Brochures</a></li>
-                                </ul>
-                            </li>
-
-                            <li class="menu-item-has-children">
-                                <a href="#">About</a>
-                                <ul class="sub-menu">
-                                    <li><a href="about.html">Company Profile</a></li>
-                                    <li><a href="testimonials.html">Awards</a></li>
-                                    <li><a href="team-members.html">Press</a>
-                                        <ul class="sub-menu">
-                                            <li><a href="#">Press Releases</a></li>
-                                            <li><a href="#">Press Clippings</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-
-                            <li><a href="blog.html">CONTACT</a></li>
-                        </ul> -->
+         
                     </div>
                     <div class="menu-row-search-box">
                         <form action="#">
