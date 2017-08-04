@@ -29,8 +29,7 @@
                     $size = "medium";
 			 ?>
 			
-                <section class="pump-system-content">
-                    <div class="row">
+                     <div class="row">
                         <div class="col-md-6 pump-head-content">
                             <ul>
                                 <li><a href="<?php the_permalink (); ?>"><h3><?php the_title(); ?></h3></a></li>
@@ -47,7 +46,7 @@
 
                     </div>
                     <hr>  
-                </section>
+              
             
 	        <?php endwhile; // end of the loop. ?>
         

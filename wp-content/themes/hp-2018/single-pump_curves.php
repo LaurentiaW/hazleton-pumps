@@ -1,6 +1,6 @@
 <?php 
 /**
- * The is the template page for custom post types press releases
+ * The is the template page for custom post type pump curves
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
@@ -14,11 +14,13 @@
 
             <div class="container">
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
-                    $date = get_field ( 'date');
-                    $primg1 = get_field ( 'primg1' );
-                    $primg2 = get_field ( 'primg2');
-                    $primg3 = get_field ( 'primg3');
-                    $size = "full";
+                    $pole2 = get_field ( 'pole2');
+                    $caption_2pole = get_field ( 'caption_2pole' );
+                    $pole4 = get_field ( 'pole4');
+                    $caption_4pole = get_field ( 'caption_4pole');
+                    $pole6 = get_field ( 'pole6');
+                    $caption_6pole = get_field ( 'caption_6pole');
+                    $size = "medium";
                 ?>
 
                 <div class="ws-40"></div>
@@ -27,26 +29,33 @@
                     <div class="col-md-12">
                         <div class="section-title">
                             <h1><?php the_title(); ?></h1> 
-                            <p><?php echo $date; ?></p>
                         </div>
                     </div>
-                <div class="ws-40"></div>
+               
                 <div class="row">
-                    <div class="col-md-7">
-                        <p><?php the_content(); ?></p>
+                    <div class="col-md-4">
+                        <figure>
+                            <?php if($pole2) { 
+                                echo wp_get_attachment_image ($pole2, $size );
+                            } ?>
+                            <figcaption><a href="<?php echo $pole2; ?>" target="_blank"> <?php echo $caption_2pole; ?> </a></figcaption>
+                        </figure> 
                     </div>
-                    <div class="col-md-5">
-                        <?php if($primg1) { 
-                                echo wp_get_attachment_image ($primg1, $size );
+                     <div class="col-md-4">
+                        <figure>
+                            <?php if($pole4) { 
+                                echo wp_get_attachment_image ($pole4, $size );
                             } ?>
-                        
-                        <?php if($primg2) { 
-                                echo wp_get_attachment_image ($primg2, $size );
+                            <figcaption><?php echo $caption_4pole; ?></figcaption>
+                        </figure> 
+                    </div>
+                   <div class="col-md-4">
+                        <figure>
+                            <?php if($pole6) { 
+                                echo wp_get_attachment_image ($pole6, $size );
                             } ?>
-
-                        <?php if($primg3) { 
-                                echo wp_get_attachment_image ($primg3, $size );
-                            } ?>
+                            <figcaption><?php echo $caption_6pole; ?></figcaption>
+                        </figure> 
                     </div>
                     
                 </div>
