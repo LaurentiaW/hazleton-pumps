@@ -88,7 +88,7 @@ function create_custom_post_types() {
 			'public' => true,
 			'has_archive' => true,
 			'rewrite' => array(
-				'slug' => 'press-clip'
+				'slug' => 'press-clippings'
 				),
 			)
 		);
@@ -175,6 +175,10 @@ function create_custom_post_types() {
 	
 }
 
+function custom_excerpt_more($more) {
+	return '...<div class="read-more"><a href="'. get_permalink() . '"></a></div>';
+} 
+add_filter('excerpt_more', 'custom_excerpt_more');
 
 add_action ('init', 'create_custom_post_types' );
 add_theme_support ( 'menus');

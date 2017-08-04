@@ -57,3 +57,57 @@
    margin-right:auto;
    display:block;
 }
+/*about page/press releases alternating content */
+
+.pr-img {
+  float: left;
+  width: 30%
+}
+
+.caption {
+  float: left;
+  width: 67%
+}
+
+.caption h3 {
+  margin-top: 0;
+}
+
+
+
+.caption ul {
+  list-style: none;
+}
+
+
+
+.alternating-content .item {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;  
+padding: 30px 5px;  
+}
+
+.alternating-content .item:after {
+content: "";  
+display: block;  
+clear: both;  
+}
+
+
+
+.alternating-content:nth-child(odd) .pr-img {
+float: left;  
+}
+
+
+
+.alternating-content:nth-child(even) .pr-img {
+float: right;  
+}
+
+.pr-img a img {
+  display: block;
+    margin-right: auto;
+    margin-left: auto;
+}

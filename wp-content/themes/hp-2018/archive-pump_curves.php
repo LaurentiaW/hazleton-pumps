@@ -13,58 +13,70 @@
 
         get_header(); ?>
 
-			<div class="container">
-				<div class="row">
+            <div class="container">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
                             <h1>Pump Performance Curves</h1>
                         </div>
                     </div>
                 </div>
-				
-				
-			
-			<?php while ( have_posts() ) : the_post();
+                
+                
+            
+            <?php while ( have_posts() ) : the_post();
                     $pole2 = get_field ( 'pole2');
                     $caption_2pole = get_field ( 'caption_2pole' );
                     $pole4 = get_field ( 'pole4');
                     $caption_4pole = get_field ( 'caption_4pole');
                     $pole6 = get_field ( 'pole6');
                     $caption_6pole = get_field ( 'caption_6pole');
-                    $size = "small";
+                    $size = "thumbnail";
+                    $icon = true;
              ?>
             
                 <section class="pump-system-content">
                     <div class="row">
                         <div class="col-md-12>">
-                        <h3><?php the_title(); ?></h3></a>
-                            <ul>
-                                <li>
-                                    <figure>
-                                        <?php if($pole2) { 
-                                            echo wp_get_attachment_image ($pole2, $size );
-                                        } ?>
-                                        <figcaption><a href="<?php echo $pole2; ?>" target="_blank"> <?php echo $caption_2pole; ?> </a></figcaption>
-                                    </figure> 
-                                </li>
-                                <li>
-                                    <figure>
-                                        <?php if($pole4) { 
-                                            echo wp_get_attachment_image ($pole4, $size );
-                                        } ?>
-                                        <figcaption><?php echo $caption_4pole; ?></figcaption>
-                                    </figure> 
-                                </li>
-                                <li>
-                                    <figure>
-                                        <?php if($pole6) { 
-                                            echo wp_get_attachment_image ($pole6, $size );
-                                        } ?>
-                                        <figcaption><?php echo $caption_6pole; ?></figcaption>
-                                    </figure> 
-                                </li>
-                            </ul>
+                            <a href="<?php the_permalink (); ?>"><h3><?php the_title(); ?></h3></a>
                         </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <figure>  
+                                <a href="<?php the_permalink (); ?>">
+                                    <?php if($pole2) { 
+                                        echo wp_get_attachment_image ($pole2, $size );
+                                    } ?>
+                                    <figcaption><?php echo $caption_2pole; ?> </figcaption>
+                                </a>
+                            </figure> 
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <figure>  
+                                <a href="<?php the_permalink (); ?>">
+                                    <?php if($pole4) { 
+                                        echo wp_get_attachment_image ($pole4, $size );
+                                    } ?>
+                                    <figcaption><?php echo $caption_4pole; ?></figcaption>
+                                </a>
+                            </figure> 
+                        </div>
+                        
+                        <div class="col-md-4">
+                            <figure>
+                                <a href="<?php the_permalink (); ?>">
+                                    <?php if($pole6) { 
+                                        echo wp_get_attachment_image ($pole6, $size );
+                                    } ?>
+                                    <figcaption><?php echo $caption_6pole; ?></figcaption>
+                                </a>
+                            </figure> 
+                        </div>
+                    
+                    </div>
                         
                     <hr>  
                 </section>

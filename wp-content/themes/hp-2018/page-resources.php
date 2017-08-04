@@ -32,7 +32,7 @@
                                     <p>Please visit our case studies page to view our pumps and pumps systems in action in various industries and applications</p>
                                 </div>
                                 <div class="col-md-6">
-                                    <h4><a href="http://localhost/hp-2018/case-studies/"> Pump Curves </a></h4>
+                                    <h4><a href="http://localhost/hp-2018/pump-curves/"> Pump Curves </a></h4>
                                     <p>Our pump curves are handy guides in understading our pumps' capabilities.</p>
                                 
                                 </div>

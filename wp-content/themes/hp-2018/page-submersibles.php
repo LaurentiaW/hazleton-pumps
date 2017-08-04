@@ -24,7 +24,7 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1><?php echo $sub_range_title; ?></h1>
-                        <p><?php echo wp_trim_words($sub_des, 50); ?></p>
+                        <p><?php echo wp_trim_words($sub_des, 55); ?></p>
                     </div>
                 </div>
             </div>

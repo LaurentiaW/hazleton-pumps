@@ -103,7 +103,7 @@ p{
 	content: '';
 }
 .section-title h1 span{
-	color: #F8F400
+	color: #f8bf53;
 }
 .section-title p{
     font-size: 19px;
@@ -682,7 +682,7 @@ header .container{
 =============================================*/
 
 .section-promo-1{
-	background: url('../img/section-bg3.jpg') no-repeat;
+	background: url('../img/about/fake-team-photo.jpg') no-repeat;
 	background-size: cover;
 	text-align: center;
 }
@@ -703,7 +703,7 @@ header .container{
 }
 
 .section-promo-1 h1 span{
-	color: #F8F400
+	color: #f8bf53;
 }
 .section-promo-1 p {
     font-size: 22px;

@@ -46,7 +46,7 @@
 
                     </div>
                     <hr>  
-              
+                </section>
             
 	        <?php endwhile; // end of the loop. ?>
         
