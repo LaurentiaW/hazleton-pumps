@@ -23,6 +23,7 @@
                     $alternative_impeller3 = get_field ( 'alternative_impeller3' );
                     $twin_volute = get_field ( 'twin_volute' );
                     $intro = get_field  ( 'intro' );
+                    $diagram_with_description = get_field ( 'diagram_with_description');
                     $size = "medium";
                 ?>
 
@@ -42,7 +43,7 @@
                         </div>
                         <div class="col-md-4 ">
                             <figure class="center-block">
-                                <a href="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo" target="_blank">
+                                <a href="<?php echo $diagram_with_description; ?>" target="_blank">
                                 <?php if($pump_diagram) { 
                                     echo wp_get_attachment_image ($pump_diagram, $size );
                                 } ?>

@@ -31,9 +31,15 @@
                     </div>
          
                     <ul class="ul no-spaces row">
+                        <?php if($awarded_by) { ?>
                         <li class="list-col-md-4"><strong>Awarded by:</strong><br> <?php echo $awarded_by; ?> </li>
+                        <?php } ?> 
+                        <?php if($$category) { ?>
                         <li class="list-col-md-4"><strong>Category:</strong><br> <?php echo $category; ?> </li>
+                        <?php } ?>
+                         <?php if($$date) { ?>
                         <li class="list-col-md-4"><strong>Date:</strong> <br> <?php echo $date; ?> </li>
+                        <?php } ?>
                     </ul>
                     <div class="row">
                         <div class="col-md-6">
