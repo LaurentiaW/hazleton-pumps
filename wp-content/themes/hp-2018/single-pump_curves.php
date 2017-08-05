@@ -36,7 +36,7 @@
                     <div class="col-md-4">
                         <figure>
                             <?php if($pole2) { 
-                                echo wp_get_attachment_image ($pole2, $size );
+                                echo wp_get_attachment_link( $pole2, $size, $permalink );
                             } ?>
                             <figcaption><a href="<?php echo $pole2; ?>" target="_blank"> <?php echo $caption_2pole; ?> </a></figcaption>
                         </figure> 
@@ -44,15 +44,17 @@
                      <div class="col-md-4">
                         <figure>
                             <?php if($pole4) { 
-                                echo wp_get_attachment_image ($pole4, $size );
+                                echo wp_get_attachment_link( $pole4, $size, $permalink );
                             } ?>
+
+                            
                             <figcaption><?php echo $caption_4pole; ?></figcaption>
                         </figure> 
                     </div>
                    <div class="col-md-4">
                         <figure>
                             <?php if($pole6) { 
-                                echo wp_get_attachment_image ($pole6, $size );
+                               echo wp_get_attachment_link( $pole6, $size, $permalink );
                             } ?>
                             <figcaption><?php echo $caption_6pole; ?></figcaption>
                         </figure> 

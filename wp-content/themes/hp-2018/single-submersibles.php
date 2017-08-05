@@ -1,6 +1,6 @@
 <?php 
 /**
- * The is the template page for custom post types press releases
+ * The is the template page for custom post types submersible
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
@@ -24,6 +24,7 @@
                     $twin_volute = get_field ( 'twin_volute' );
                     $intro = get_field  ( 'intro' );
                     $diagram_with_description = get_field ( 'diagram_with_description');
+                    $img = get_field ( 'img');
                     $size = "medium";
                 ?>
 
@@ -43,10 +44,16 @@
                         </div>
                         <div class="col-md-4 ">
                             <figure class="center-block">
-                                <a href="<?php echo $diagram_with_description; ?>" target="_blank">
+                               <a href="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo" target="_blank">
                                 <?php if($pump_diagram) { 
                                     echo wp_get_attachment_image ($pump_diagram, $size );
                                 } ?>
+                                
+                                <figcaption><?php $id = $diagram_with_description; // ID of an attachment
+                                    echo wp_get_attachment_link( $id, '' , false, false, 'Diagram of pump confifuration' ); 
+                                    ?>
+                                
+                                </figcaption>
                                 </a>
                             </figure>
                        

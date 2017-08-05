@@ -16,7 +16,9 @@
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
                     $adv_pump_config = get_field ( 'adv_pump_config');
                     $applications = get_field ( 'applications');
+                    $img = get_field ( 'img');
                     $pump_diagram = get_field ( 'pump_diagram');
+                    $diagram_caption = get_field ( 'diagram_caption' );
                     $iec_stds = get_field ( 'iec_stds' );
                     $alternative_impeller = get_field ( 'alternative_impeller' );
                     $alternative_impeller2 = get_field ( 'alternative_impeller2' );
@@ -46,6 +48,12 @@
                                 <?php if($pump_diagram) { 
                                     echo wp_get_attachment_image ($pump_diagram, $size );
                                 } ?>
+                                
+                                <figcaption><?php $id = $diagram_caption; // ID of an attachment
+                                    echo wp_get_attachment_link( $id, '' , false, false, 'Diagram of pump confifuration' ); 
+                                    ?>
+                                
+                                </figcaption>
                                 </a>
                             </figure>
                        

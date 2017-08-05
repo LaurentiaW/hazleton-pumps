@@ -175,12 +175,20 @@ function create_custom_post_types() {
 	
 }
 
+add_action ('init', 'create_custom_post_types' );
+
+function modify_attachment_link($markup) {
+    return preg_replace('/^<a([^>]+)>(.*)$/', '<a\\1 target="_blank">\\2', $markup);
+}
+add_filter( 'wp_get_attachment_link', 'modify_attachment_link', 10, 6 );
+
+
 function custom_excerpt_more($more) {
 	return '...<div class="read-more"><a href="'. get_permalink() . '"></a></div>';
 } 
 add_filter('excerpt_more', 'custom_excerpt_more');
 
-add_action ('init', 'create_custom_post_types' );
+
 add_theme_support ( 'menus');
 
 function hippo2018_register_theme_menus() {
