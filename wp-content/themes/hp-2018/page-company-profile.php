@@ -20,7 +20,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h1>Hazleton Pumps - our Company Profile></h1>
+                            <h1>Hazleton Pumps - our Company Profile</h1>
                         </div>
                     </div>
                 </div>
@@ -48,10 +48,7 @@
                             </p>
 
 
-                            <p>
-                                Pumping solutions are created capable of meeting the demands of clients in all mining and processing applications. Through customized engineering and advanced technology facilitated by a team of experts to accommodate a wide variety of applications and specific duties such as the following:
-                            </p>
-                            
+                                                      
                             
                         </div>
                     </div>
@@ -73,3 +70,6 @@
                 </div>
             </div>
         </section>
+
+    <div class="ws-50"></div>
+ <?php get_footer(); ?>

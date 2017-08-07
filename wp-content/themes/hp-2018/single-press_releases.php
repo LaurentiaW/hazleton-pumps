@@ -16,8 +16,11 @@
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
                     $date = get_field ( 'date');
                     $primg1 = get_field ( 'primg1' );
+                    $caption_image_1 = get_field ( 'caption_image_1' );
                     $primg2 = get_field ( 'primg2');
+                    $caption_image_2 = get_field ( 'caption_image_2' );
                     $primg3 = get_field ( 'primg3');
+                    $caption_image_3 = get_field ( 'caption_image_3' );
                     $size = "full";
                 ?>
 
@@ -36,17 +39,33 @@
                         <p><?php the_content(); ?></p>
                     </div>
                     <div class="col-md-5">
-                        <?php if($primg1) { 
-                                echo wp_get_attachment_image ($primg1, $size );
-                            } ?>
-                        
-                        <?php if($primg2) { 
-                                echo wp_get_attachment_image ($primg2, $size );
-                            } ?>
+                       <?php if($primg1) { ?>
+                            <figure>
+                                <?php echo wp_get_attachment_image ($primg1, $size );
+                                 ?>
+                                 <figcaption><?php echo $caption_image_1; ?></figcaption>
+                            
+                            </figure>
+                        <?php } ?> 
 
-                        <?php if($primg3) { 
-                                echo wp_get_attachment_image ($primg3, $size );
-                            } ?>
+                        <?php if($primg2) { ?>
+                            <figure>
+                                <?php echo wp_get_attachment_image ($primg2, $size );
+                                 ?>
+                                 <figcaption><?php echo $caption_image_2; ?></figcaption>
+                            
+                            </figure>
+                        <?php } ?> 
+
+                         <?php if($primg3) { ?>
+                            <figure>
+                                <?php echo wp_get_attachment_image ($primg3, $size );
+                                 ?>
+                                 <figcaption><?php echo $caption_image_3; ?></figcaption>
+                            
+                            </figure>
+                        <?php } ?> 
+
                     </div>
                     
                 </div>

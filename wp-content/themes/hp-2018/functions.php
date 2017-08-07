@@ -173,6 +173,21 @@ function create_custom_post_types() {
 			)
 		);
 	
+	//create a hippo lineup - frontpage custom post type 
+	register_post_type (
+		'pump_img',
+		array(
+			'labels' => array(
+				'name' => __( 'Pump Image' ),
+				'singular_name' => __('Pump Images')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'pump-img'
+				),
+			)
+		);
 }
 
 add_action ('init', 'create_custom_post_types' );

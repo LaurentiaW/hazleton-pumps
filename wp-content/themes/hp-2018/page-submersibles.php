@@ -30,6 +30,7 @@
             </div>
 
         <?php endwhile; ?>
+        <?php wp_reset_query(); ?>
 				
 		<ul class="ul no-spaces row">
                     <?php query_posts('post_type=submersibles'); ?>
@@ -57,6 +58,7 @@
                                 </div>                    
                             </li>
                     <?php endwhile; ?> 
+                <?php wp_reset_query(); ?>
         </ul>
         
     </div>

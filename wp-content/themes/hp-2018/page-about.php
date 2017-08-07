@@ -97,6 +97,7 @@
                                 </div>                    
                             </li>
                     <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                 </ul>
 
             </div>            
@@ -125,6 +126,7 @@
                                 </div>                    
                             </li>
                     <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                 </ul>
 
             </div>            

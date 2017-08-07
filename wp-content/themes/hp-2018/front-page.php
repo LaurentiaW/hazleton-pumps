@@ -103,6 +103,7 @@
                                 </div>                    
                             </li>
                     <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                 </ul>
         </div>
     </section>
@@ -132,8 +133,10 @@
                             <p>The award-winning Hippo Slurry Pump Range is the perfect workhorse to deal with the continuous and harsh demands of the mining and mineral processing industries. Custom built, the Hippo Slurry Pump Range provides pumping solutions that are robust, rugged, reliable and flexible. <br><br>The pumps capacities are extremely diverse and can assist in applications ranging from high-volume dewatering applications to settled out acidic and corrosive slurries. The Hippo Slurry Pump Range can be built to explosion-proof standard IEC 60097-1:2005 and is available in various formats and applications. Click here for more.... </p>
                         </div>
                         <div class="col-md-offset-1 col-md-3">
-                             <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
-                             <img class="center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
+                            <a href="http://localhost/hp-2018/hippo-range/">
+                                 <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
+                                 <img class="center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
+                            </a>
                         </div> 
                      </div>
                 </div>
@@ -156,79 +159,31 @@
                 </div>
 
                 <ul class="ul no-spaces row">
+                    <?php query_posts('post_type=pump_img'); ?>
+                        <?php while ( have_posts() ) : the_post(); 
+                            $abbreviation = get_field ( 'abbreviation');
+                            $img = get_field ( 'img');
+                            $size = "medium";
+                            ?>
                     <li class="list-col-md-4">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block"  src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/sb.png" alt="Hippo Bottom Suction Submersible Slurry Pump">
-                                    <h4>SB</h4>
-                                    <p>Bottom Suction Submersible</p>
-                                </a>               
+                               <figure class="pump-systems-img">
+                                   <a href="http://localhost/hp-2018/hippo-range/">
+
+                                    <?php  if($img ) { 
+                                                    echo wp_get_attachment_image ($img, $size);
+                                                } ?>   
+                                    <h4><?php echo $abbreviation; ?> </h4>
+                                    <p><?php the_title(); ?></p>
+                                </a>      
+                               </figure>
+                                         
                             </div>
                         </div>
-                        <!-- pump line up SB -->
                     </li>
-                    <li class="list-col-md-4">
-                        <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block"  src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/st.png" alt="Hippo Top Suction Submersible Slurry Pump">
-                                    <h4>ST</h4>
-                                    <p>Submersible Top Suction</p>
-                                </a>               
-                            </div>
-                        </div>
-                        <!-- pump line up ST -->
-                    </li>
-                    <li class="list-col-md-4">
-                        <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block"  src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/vb.png" alt="Hippo Bottom Suction Vertical Spindle Slurry Pump">
-                                    <h4>VB</h4>
-                                    <p>Bottom Suction Slurry Vertical Spindle</p>
-                                </a>               
-                            </div>
-                        </div>
-                        <!-- pump line up VB -->
-                    </li>
-                    <li class="list-col-md-4">
-                        <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/vbd.png" alt="Hippo Bottom Discharge Vertical Spindle Slurry Pump">
-                                    <h4>VBD</h4>
-                                    <p>Bottom Discharge Slurry Vertical Spindle</p>
-                                </a>               
-                            </div>
-                        </div>
-                        <!-- pump line up VB -->
-                    </li>
-                    
-                    <li class="list-col-md-4">
-                        <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block"  src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/vt.png" alt="Hippo Top Suction Vertical Spindle Slurry Pump">
-                                    <h4>VT</h4>
-                                    <p>Top Suction Slurry Vertical Spindle</p>
-                                </a>               
-                            </div>
-                        </div>
-                        <!-- pump line up VT -->
-                    </li>
-                    <li class="list-col-md-4">
-                        <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="#">
-                                    <img class="img-responsive center-block"  src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/pumps/vv.png" alt="Hippo Vertical Vortex Slurry Pump">
-                                    <h4>VV</h4>
-                                    <p>Vertical Vortex Slurry</p>
-                                </a>               
-                            </div>
-                        </div>
-                        <!-- pump line up VV -->
-                    </li>
+                   <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                 </ul>
             </div>
         </section>
@@ -326,7 +281,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Mining</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
@@ -339,7 +294,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/nuclear.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Nuclear</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
@@ -351,7 +306,7 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
+                            <div class="http://localhost/hp-2018/case-studies/">
                                 <a href="solution-single.html">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/chemical.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Chemical & Processing</h4>
@@ -365,7 +320,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/foundries.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Foundries & Steel </h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
@@ -378,7 +333,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/power.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Power Generation, Municapal Services, & Waste management</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
@@ -391,7 +346,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Pulp, Paper & Sugar</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
@@ -404,7 +359,7 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="solution-single.html">
+                                <a href="http://localhost/hp-2018/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/sand.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Sand, Gravel, Ceramic & Steel Production</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>

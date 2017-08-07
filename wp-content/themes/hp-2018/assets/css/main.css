@@ -1319,15 +1319,16 @@ form#commentform input[type=email]:focus{
     font-family: 'Merriweather';
 }
 
-.widget_col .widget img{
+/*.widget_col .widget img{
     max-width: 100%;
-}
+}*/
 
 .widget_recent_entries .post-date{
     display: block;
     font-size: 14px;
     color: #777777;
     margin-top: 5px;
+    list-style: none;
 }
 
 
@@ -1498,7 +1499,8 @@ footer{
 	float: left;
 }
 .widget.widget_recent_entries ul li .post-thumb img {
-	width: 100%;
+	width: 75%;
+    height: 75%;
 }
 .widget.widget_recent_entries ul li .post-content{
 	width: 60%;
@@ -1515,7 +1517,7 @@ footer{
 	transition: all 0.3s ease;
 }
 .widget.widget_recent_entries ul li:hover h3{
-	color: #E4E10C;
+	color: #f8bf53;
 }
 .widget.widget_recent_entries ul li .post-content p {
     font-size: 14px;

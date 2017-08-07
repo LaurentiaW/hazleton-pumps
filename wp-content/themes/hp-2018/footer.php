@@ -28,8 +28,8 @@
                                 <h4>Get in touch</h4>
 
                                 <ul>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="https://www.linkedin.com/company-beta/9005735/"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="https://twitter.com/HazletonPumps" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.linkedin.com/company-beta/9005735/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
 
                             </div>
@@ -39,49 +39,47 @@
                             <div class="widget widget_nav_menu">
                                 <h3>Quick links</h3>
                                 <ul>
-                                    <li><a href="#">Pump Systems</a></li>
-                                    <li><a href="#">Hippo Slurry Pump Range</a></li>
-                                    <li><a href="#">Resources</a></li>
-                                    <li><a href="#">Case Studies</a></li>
-                                    <li><a href="#">Pump Curves</a></li>
-                                    <li><a href="#">Press</a></li>
+                                    <li><a href="http://localhost/hp-2018/pump-systems/">Pump Systems</a></li>
+                                    <li><a href="http://localhost/hp-2018/hippo-range/">Hippo Slurry Pump Range</a></li>
+                                    <li><a href="http://localhost/hp-2018/resources/">Resources</a></li>
+                                    <li><a href="http://localhost/hp-2018/case-studies/">Case Studies</a></li>
+                                    <li><a href="http://localhost/hp-2018/pump-curves/">Pump Curves</a></li>
+                                    <li><a href="http://localhost/hp-2018/press-releases/">Press</a></li>
                                 </ul>
                             </div>
                         </div>  <!-- col-md-3 -->
 
                         <div class="col-md-3">
-                            <div class="widget widget_recent_entries">
+                            <div class="widget widget_recent_entries" id="footer-pr">
                                 <h3>Latest News</h3>
-                                <ul>
+                                 
+                                <ul class="footer-pr">
+
+                                    <?php query_posts('posts_per_page=2&post_type=press_releases'); ?>
+                                        <?php while ( have_posts() ) : the_post(); 
+                                        $date = get_field ( 'date');
+                                        $primg1 = get_field ( 'primg1' );
+                                        $caption_image_1 = get_field ( 'caption_image_1' );
+                                        $size = "thumbnail";
+                                    ?>
                                     <li>
                                         <div class="post-thumb">
-                                            <a href="#">
-                                                <img src="assets/img/featured/01.jpg" alt="Blog / News">
+                                            <a href="<?php the_permalink (); ?>">
+                                               <?php if($primg1) { 
+                                                    echo wp_get_attachment_image ($primg1, $size );
+                                                } ?>
                                             </a>
                                         </div>
                                         <div class="post-content">
-                                            <a href="#">
-                                                <h3>Great news title news title</h3>
-                                                <span class="date">12th May, 2017</span>
+                                            <a href="<?php the_permalink (); ?>">
+                                                <h3><?php the_title(); ?></h3>
+                                                <span class="date"><?php echo $date; ?></span>
                                             </a>
-                                            <p>Lorem ipsum dolor sit amet, </p>
+                                            <p><?php echo wp_trim_words( get_the_excerpt(), 10 ); ?></p>
                                         </div>
                                     </li> <!-- / single blog post -->
 
-                                    <li>
-                                        <div class="post-thumb">
-                                            <a href="#">
-                                                <img src="assets/img/featured/01.jpg" alt="Blog / News">
-                                            </a>
-                                        </div>
-                                        <div class="post-content">
-                                            <a href="#">
-                                                <h3>Great news title news title</h3>
-                                                <span class="date">12th May, 2017</span>
-                                            </a>
-                                            <p>Lorem ipsum dolor sit amet, </p>
-                                        </div>
-                                    </li> <!-- / single blog post -->
+                                <?php endwhile; ?> 
 
                                 </ul>
                             </div>

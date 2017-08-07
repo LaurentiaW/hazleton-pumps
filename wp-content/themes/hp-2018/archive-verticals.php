@@ -29,7 +29,8 @@
             </div>
 
         <?php endwhile; ?>
-				
+		<?php wp_reset_query(); ?>
+        		
 			<?php while ( have_posts() ) : the_post();
                     $intro = get_field ( 'intro' )
                     $pump_diagram = get_field ( 'pump_diagram');
