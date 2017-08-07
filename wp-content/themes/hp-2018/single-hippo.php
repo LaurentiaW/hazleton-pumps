@@ -1,7 +1,6 @@
 <?php 
 /**
- * This the Hippo Slurry Pump Range template file
- *
+ * The is the template page for custom post types verticals
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
@@ -11,10 +10,9 @@
  */
 
 
-     get_header(); ?>
-	
-	   <div class="container">
-            <?php query_posts('post_type=hippo_range'); ?>
+        get_header(); ?>
+
+            <div class="container">
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
                     $sub_range_title = get_field ( 'sub_range_title');
                     $sub_des = get_field ( 'sub_des' );
@@ -26,18 +24,17 @@
                     $ver_button = get_field ( 'ver_button');
                     $size = "medium";
                 ?>
-
                 <div class="ws-40"></div>
-                     <div class="row">
+                    <div class="row">
                         <div class="col-md-12">
                             <div class="section-title">
                                 <h1><?php the_title(); ?></h1> 
-                                <p><?php the_content(); ?></p>
                             </div>
                         </div>
-                    </div>
-                <div class="ws-40"></div>
-                <div class="row">
+
+                    <div class="ws-40"></div>
+
+                   <div class="row">
                     <div class="col-md-12">
                         <h2><?php echo $sub_range_title; ?></h2>                          
                     </div>
@@ -81,11 +78,10 @@
 
                 <?php endif; ?>
             </div>
-
+            
             <div class="ws-40"></div>
-        </div>
-    </div>
-<?php get_footer(); ?>
+        
+        <?php get_footer(); ?>
         
 
 

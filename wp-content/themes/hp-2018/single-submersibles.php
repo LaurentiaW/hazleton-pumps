@@ -9,22 +9,21 @@
  * @since Hazleton Pumps 1.0
  */
 
-
-        get_header(); ?>
-
-            <div class="container">
+  get_header(); ?>
+       <div class="container">
                 <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
                     $adv_pump_config = get_field ( 'adv_pump_config');
                     $applications = get_field ( 'applications');
+                    $img = get_field ( 'img');
                     $pump_diagram = get_field ( 'pump_diagram');
+                    $diagram_caption = get_field ( 'diagram_caption' );
                     $iec_stds = get_field ( 'iec_stds' );
                     $alternative_impeller = get_field ( 'alternative_impeller' );
                     $alternative_impeller2 = get_field ( 'alternative_impeller2' );
                     $alternative_impeller3 = get_field ( 'alternative_impeller3' );
                     $twin_volute = get_field ( 'twin_volute' );
                     $intro = get_field  ( 'intro' );
-                    $diagram_with_description = get_field ( 'diagram_with_description');
-                    $img = get_field ( 'img');
+                    $diagram_with_description = get_field  ( 'diagram_with_description' );
                     $size = "medium";
                 ?>
 
@@ -44,7 +43,7 @@
                         </div>
                         <div class="col-md-4 ">
                             <figure class="center-block">
-                               <a href="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo" target="_blank">
+                                <a href="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo" target="_blank">
                                 <?php if($pump_diagram) { 
                                     echo wp_get_attachment_image ($pump_diagram, $size );
                                 } ?>
@@ -67,7 +66,9 @@
 
                     <div class="row">
                         <div class="col-md-5">
-                            <h4>Advantages of the <?php the_title(); ?> pump configuration</h4>
+                            <?php if($adv_pump_config) { ?>
+                                <h4>Advantages of the <?php the_title(); ?> pump configuration</h4>
+                            <?php } ?> 
                             <figure>
                                 <?php if($twin_volute) { 
                                 echo wp_get_attachment_image ($twin_volute, $size );
@@ -76,8 +77,11 @@
                             <p><?php echo $adv_pump_config; ?></p>
                         </div>
                         <div class="col-md-5 col-md-offset-1">
-                            <h4>Applications</h4>
-                            <p><?php echo $applications; ?></p>
+
+                            <?php if($applications) { ?>
+                                <h4>Applications</h4>
+                                <p><?php echo $applications; ?></p>
+                            <?php } ?>
 
                             <br>
                             <?php if($iec_stds) { ?>
@@ -138,6 +142,3 @@
         
         <?php get_footer(); ?>
         
-
-
-     

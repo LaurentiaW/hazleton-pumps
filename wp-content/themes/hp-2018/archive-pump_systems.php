@@ -29,7 +29,7 @@
                     $size = "medium";
 			 ?>
 			
-                     <div class="row">
+                     <div class="row pump-system-content">
                         <div class="col-md-6 pump-head-content">
                             <ul>
                                 <li><a href="<?php the_permalink (); ?>"><h3><?php the_title(); ?></h3></a></li>

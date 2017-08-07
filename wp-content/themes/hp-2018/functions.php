@@ -143,7 +143,7 @@ function create_custom_post_types() {
 
 	//create a hippo vertical slurry pump range custom post type 
 	register_post_type (
-		'hippo_range',
+		'hippo',
 		array(
 			'labels' => array(
 				'name' => __( 'Hippo Slurry Pump Range' ),

@@ -33,7 +33,7 @@
                     ?>
 
               
-                     <div class="row">
+                     <div class="row pump-system-content">
                         <div class="col-md-6 pump-head-content">
                             <ul>
                                 <li><a href="<?php the_permalink (); ?>"><h3><?php the_title(); ?></h3></a></li>
@@ -57,11 +57,15 @@
               <div class="ws-60"></div>
               <hr>
 
-             
+             <div class="row">
+               <div class="col-md-12 center">
+                    <p>For more information on any of our press features, please don't hesitate to contact us!</p>    
+                   <div class="header-request-quote">
+                        <a href="http://localhost/hp-2018/contact/" class="btn btn-style1"><strong> Get in touch</strong></a>
+                    </div>
+               </div>
                
             </div>
           </div>
 <div class="ws-60"></div>
-                
-
         <?php get_footer(); ?>

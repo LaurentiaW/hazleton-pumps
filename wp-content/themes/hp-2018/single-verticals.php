@@ -1,6 +1,6 @@
 <?php 
 /**
- * The is the template page for custom post types press releases
+ * The is the template page for custom post types verticals
  *
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
@@ -67,7 +67,9 @@
 
                     <div class="row">
                         <div class="col-md-5">
-                            <h4>Advantages of the <?php the_title(); ?> pump configuration</h4>
+                            <?php if($adv_pump_config) { ?>
+                                <h4>Advantages of the <?php the_title(); ?> pump configuration</h4>
+                            <?php } ?> 
                             <figure>
                                 <?php if($twin_volute) { 
                                 echo wp_get_attachment_image ($twin_volute, $size );
@@ -76,8 +78,11 @@
                             <p><?php echo $adv_pump_config; ?></p>
                         </div>
                         <div class="col-md-5 col-md-offset-1">
-                            <h4>Applications</h4>
-                            <p><?php echo $applications; ?></p>
+
+                            <?php if($applications) { ?>
+                                <h4>Applications</h4>
+                                <p><?php echo $applications; ?></p>
+                            <?php } ?>
 
                             <br>
                             <?php if($iec_stds) { ?>

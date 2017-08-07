@@ -13,7 +13,7 @@
 
 
     get_header(); ?>
-      <?php query_posts('post_type=hippo_range'); ?>
+      <?php query_posts('post_type=hippo'); ?>
         <?php if ( have_posts() ) : while ( have_posts() ): the_post(); 
                     $ver_range_title = get_field ( 'ver_range_title');
                     $vertical_description = get_field ( 'vertical_description');

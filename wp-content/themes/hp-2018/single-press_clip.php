@@ -1,6 +1,6 @@
 <?php 
 /**
- * The template for case studies
+ * The template for press clippings
  *
  * @package WordPress
  * @subpackage Hazleton Pumps

@@ -1,7 +1,6 @@
 <?php 
 /**
- * The is the template page for custom post types press releases
- *
+ * The is the template page for custom post types pump systems
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
@@ -54,11 +53,12 @@
                     <div class="col-md-6">
                         <ul>
                             <li><strong>Summary:</strong><br><?php the_content(); ?></li>
-                            <li><strong>Objective:</strong><br><?php echo $objective; ?></li>
-                            <li><strong>Operation:</strong><br><?php echo $operation; ?></li>
-                            <li><strong>Application:</strong><br><?php echo $application; ?></li>
-                            <li><strong>Duty:</strong><br><?php echo $duty; ?></li>
-                            <li><strong>Materials of construction:</strong> <br><?php echo $materials_of_construction; ?></li>
+                           
+                            <?php if($objective) { ?><li><strong>Objective:</strong><br><?php echo $objective; ?></li><?php } ?>
+                            <?php if($operation) { ?><li><strong>Operation:</strong><br><?php echo $operation; ?></li><?php } ?>
+                            <?php if($application) { ?><li><strong>Application:</strong><br><?php echo $application; ?></li><?php } ?>
+                            <?php if($duty) { ?><li><strong>Duty:</strong><br><?php echo $duty; ?></li><?php } ?>
+                            <?php if($materials_of_construction) { ?><li><strong>Materials of construction:</strong> <br><?php echo $materials_of_construction; ?></li><?php } ?>
                         </ul>
                         
 
