@@ -372,7 +372,8 @@ header .container{
     background: none;
     border: none;
     top: 15px;
-    color: #fff;
+    color:  #403f4c;
+    font-weight: bolder;
     font-size: 19px;
 }
 .menu-row-search-box form button:focus{

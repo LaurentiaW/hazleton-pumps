@@ -77,7 +77,10 @@
                     </div>
                 </div>
 
-                <ul class="ul no-spaces row">
+           
+            <div class="well well-lg">
+                
+                 <ul class="ul no-spaces row">
                     <?php query_posts('posts_per_page=4&post_type=pump_systems'); ?>
                         <?php while ( have_posts() ) : the_post(); 
                             $diagram = get_field ( 'diagram');
@@ -86,7 +89,7 @@
 
                             <li class="list-col-md-6">
                                 <div class="single-service"> 
-                                    <h3><a href="<?php the_permalink (); ?>"><?php echo wp_trim_words( get_the_title(), 6 ); ?></a></h3>
+                                    <h3><a href="<?php the_permalink (); ?>"><?php echo wp_trim_words( get_the_title(), 4 ); ?></a></h3>
                                     <div class="serv-img-wrap">
                                         <article class="pump-systems"> 
                                             <p><?php the_excerpt(); ?> </p>
@@ -105,6 +108,7 @@
                     <?php endwhile; ?> 
                     <?php wp_reset_query(); ?>
                 </ul>
+            </div>
         </div>
     </section>
         <!--====  End of SERVICES AREA  ====-->
@@ -157,7 +161,9 @@
                         </div>
                     </div>
                 </div>
-
+            <div class="row text-center">
+                
+           
                 <ul class="ul no-spaces row">
                     <?php query_posts('post_type=pump_img'); ?>
                         <?php while ( have_posts() ) : the_post(); 
@@ -165,7 +171,7 @@
                             $img = get_field ( 'img');
                             $size = "medium";
                             ?>
-                    <li class="list-col-md-4">
+                    <li class="list-col-md-4 center-block">
                         <div class="single-service">
                             <div class="serv-img-wrap">
                                <figure class="pump-systems-img">
@@ -186,7 +192,9 @@
                     <?php wp_reset_query(); ?>
                 </ul>
             </div>
-        </section>
+
+        </div>
+    </section>
 
     
        

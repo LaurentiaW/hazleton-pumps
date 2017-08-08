@@ -36,7 +36,7 @@
 
                 <?php endif; ?>
             </div>
-
+          <div class="ws-50"></div>
         <?php get_footer(); ?>
         
 

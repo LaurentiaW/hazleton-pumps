@@ -116,3 +116,12 @@ figcaption {
   text-align: center;
 }
 
+.service-area .well-lg {
+  background-color: #bf2128;
+}
+
+/* navigation */
+.menu-row-search-box form button {
+    font-weight: bolder;
+    color: #403f4c;
+  }

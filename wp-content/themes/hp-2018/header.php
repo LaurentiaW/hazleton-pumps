@@ -89,6 +89,63 @@
                         </div>
                     </div>
                 </div>
+                <div class="row menu-area">
+                    <div class="main-menu">
+                        <div class="slicknav_menu">
+                            <a href="#" aria-haspopup="true" role="button" tabindex="0" class="slicknav_btn slicknav_collapsed">
+                                <span class="slicknav_menutxt">MENU</span>
+                                <span class="slicknav_icon">
+                                        <span class="slicknav_icon-bar"></span>
+                                        <span class="slicknav_icon-bar"></span>
+                                        <span class="slicknav_icon-bar"></span>
+                                </span>
+                            </a>
+
+                            <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
+                    </div>
+                       <?php 
+                            $defaults = array (
+                                'container' => 'ul', 
+                                'theme_location' => 'primary-menu',
+                                'menu_class' => 'slicknav_nav slicknav_hidden',
+                                'menu_id' => 'menu',
+                                'aria-hidden'=>'true',
+                                'role' => 'menu',
+                                );
+
+                            wp_nav_menu ( $defaults );
+
+
+                        ?>
+
+
+                    </div>
+                    <div class="menu-row-search-box">
+                        <form class="search" action="#">
+                            <input type="search" placeholder="SEARCH">
+                            <button type="submit"><i class='glyphicon glyphicon-search'></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+
+
+
+<!--
+               <nav role="navigation" class="navbar">
+        <!-- Brand and toggle get grouped for better mobile display -->
+ <!--       <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
 
                 <div class="row menu-area">
                     <div class="main-menu">
@@ -115,3 +172,43 @@
                 </div>
             </div>
         </header>
+-->
+<div class="ws-40"></div>
+  <!--      <section>
+      <nav role="navigation" class="navbar navbar-fixed-top">
+        <!-- Brand and toggle get grouped for better mobile display 
+        <div class="navbar-header">
+          <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+            <!-- Collection of nav links, forms, and other content for toggling
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="hippo-slurry-pump-range/index.html">Hippo Pump Range<b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="hippo-slurry-pump-range/index.html">The Hippo Slurry Pump Range</a></li>
+                  <li class="divider"></li>
+                  <li><a href="hippo-slurry-pump-range/submersible/index.html">Submersible Slurry Pump Range</a></li>
+                  <li><a href="hippo-slurry-pump-range/vertical/index.html">Vertical Slurry Pump Range</a></li>
+                  <li class="divider"></li>
+                  <li><a href="pump-performance-curves/index.html">Pump Curves</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+              <a data-toggle="dropdown" class="dropdown-toggle" href="about/company-profile.html">About <b class="caret"></b></a>
+                <ul role="menu" class="dropdown-menu">
+                  <li><a href="about/company-profile.html">Company Profile</a></li>
+                  <li><a href="about/awards.html">Awards</a></li>
+                </ul>
+            </li>
+            <li><a href="services-and-support/index.html">Service & Support</a></li>
+            <li><a href="contact/index.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </section> -->

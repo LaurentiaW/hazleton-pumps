@@ -87,7 +87,7 @@
                <div class="col-md-12 center">
                     <p>Need more information on our pump performance curves? Our sales team are ready to assist you with any of your queries!</p>    
                    <div class="header-request-quote">
-                        <a href="" class="btn btn-style1"><strong> Get in touch</strong></a>
+                        <a href="http://localhost/hp-2018/contact/" class="btn btn-style1"><strong> Get in touch</strong></a>
                     </div>
                </div>
                

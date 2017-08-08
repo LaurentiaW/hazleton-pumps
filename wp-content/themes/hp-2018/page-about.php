@@ -177,15 +177,25 @@
 
         
         </section>
-        
+        <hr>
 
             </div>
         
-    </div>   
+    </div>
+    <div class="ws-60"></div>   
+<div class="row">
+               <div class="col-md-12 center">
+                    <p>Please feel free to contact us should you require any further more information about Hazleton Pumps</p>    
+                   <div class="header-request-quote">
+                        <a href="http://localhost/hp-2018/contact/" class="btn btn-style1"><strong> Get in touch</strong></a>
+                    </div>
+               </div>
+               
+                
+            </div>
 
-
-           <div class="ws-100"></div>
-        
+           
+         <div class="ws-40"></div>   
        </div>
 </section>
     <?php get_footer(); ?>
