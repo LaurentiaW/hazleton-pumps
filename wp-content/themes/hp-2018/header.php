@@ -62,7 +62,7 @@
                 <div class="row upper-header">
                     <div class="col-md-3 col-sm-6 col-xs-6">
                         <div class="logo">
-                            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/logo.png" alt="Logo"></a>
+                            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="Logo"/>  
                         </div>
                     </div>
                     <div class="col-md-6 in-h-b-col">
