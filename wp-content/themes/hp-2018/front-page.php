@@ -19,12 +19,11 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
-                            <div class="notice">
+                            <div class="notice well">
                             <p>Hazleton Pumps can provide spare parts and services to all Hazleton Pumps products and systems. This includes pumps originally manufactured in North America & Canada. </p> 
                             </div>
                         </div>
                     </div>
-                </div>
         </section>
 
         <!--=================================
@@ -138,7 +137,10 @@
                         </div>
                         <div class="col-md-offset-1 col-md-3">
                             <a href="http://localhost/hp-2018/hippo-range/">
-                                 <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
+                                 <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
+                            </div>
+                    </div>
+                    <div class="col-md-6 in-h-b-col">
                                  <img class="center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
                             </a>
                         </div> 
