@@ -141,7 +141,7 @@
                             </div>
                     </div>
                     <div class="col-md-6 in-h-b-col">
-                                 <img class="center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
+                                 <img class="center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
                             </a>
                         </div> 
                      </div>
@@ -256,7 +256,7 @@
                     <div class="ws-50"></div>
                     <div class="row">
                         <div class="col-xs-12">
-                            <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/world-map-with-hippos.png" alt="A world map with where Hazleton Pumps have pumps in operation">
+                            <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/world-map-with-hippos.png" alt="A world map with where Hazleton Pumps have pumps in operation">
                         </div>
                         <div class="col-xs-12">
                             <p>The Hippo Slurry Pump Range was designed and developed to meet the harsh and continuous conditions set by the mining and mineral processing industries found in Souther Africa.  Creating a slurry pump range that is capable of running dry and operate in a wide variety of temperatures the Hippo Pump Range is the ideal solution for dealing with high volume dewatering situation to harsh and abrasive applications; with a custom build solution for each application. Our pumps and pump systems have proven to be equally effective in other parts of the world including Canada, South America, Australia, Middle-East and Russia.</p>
@@ -290,9 +290,9 @@
                  <ul class="ul no-spaces row">
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                          <div class="serv-img-wrap">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Mining</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -304,8 +304,8 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/nuclear.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/nuclear.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Nuclear</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -316,9 +316,9 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="http://localhost/hp-2018/case-studies/">
-                                <a href="solution-single.html">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/chemical.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                            <div class="serv-img-wrap">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/chemical.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Chemical & Processing</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -330,8 +330,8 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/foundries.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/foundries.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Foundries & Steel </h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -343,8 +343,8 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/power.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/power.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Power Generation, Municapal Services, & Waste management</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -356,8 +356,8 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Pulp, Paper & Sugar</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -369,8 +369,8 @@
                     <li class="list-col-md-3">
                         <div class="single-service">
                             <div class="serv-img-wrap">
-                                <a href="http://localhost/hp-2018/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/industries/sand.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                <a href="<?php echo home_url(); ?>/case-studies/">
+                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/sand.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Sand, Gravel, Ceramic & Steel Production</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -406,19 +406,19 @@
                 <div class="row">
                     <div class="col-md-4 col-xs-3">
                         <h6>Associated by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/proudly/sapsda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
+                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sapsda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
                     </div>
 
                     <div class="col-md-4 col-xs-3">
                         <h6>Accredited by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/proudly/SABS.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
+                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SABS.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
                     </div>
 
                     <div class="col-md-4 col-xs-3">
                         <h6>Awarded by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/proudly/sassda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
+                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sassda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
                     </div>
                     
