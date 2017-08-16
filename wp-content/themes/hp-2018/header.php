@@ -76,10 +76,10 @@
                                       <span class="title">Email Address</span>
                                       <span class="content"><a href="mailto:info@hazletonpumps.co"> info@hazletonpumps.co </a> </span>
                                     </li>
-                                    <li>
+                                  <!--  <li>
                                        <span class="title">Flameproof Certification</span>
                                        <span class="content">IEC 60097-1:2005</span>
-                                </li> 
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -104,19 +104,32 @@
                             <ul class="slicknav_nav slicknav_hidden" aria-hidden="true" role="menu" style="display: none;">
                     </div>
                        <?php 
-                            $defaults = array (
+                            wp_nav_menu( array(
                                 'container' => 'ul', 
-                                'theme_location' => 'primary-menu',
+                                'menu' => 'primary',
+                                'theme_location' => 'primary',
+                                'depth'             => 2,
                                 'menu_class' => 'slicknav_nav slicknav_hidden',
                                 'menu_id' => 'menu',
                                 'aria-hidden'=>'true',
                                 'role' => 'menu',
-                                );
+                                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                                )
 
-                            wp_nav_menu ( $defaults );
-
-
+                            );
+ 
                         ?>
+<!-- wp_nav_menu( array(
+                'menu'              => 'primary',
+                'theme_location'    => 'primary',
+                'depth'             => 2,
+                'container'         => 'div',
+                'container_class'   => 'collapse navbar-collapse',
+                'container_id'      => 'bs-example-navbar-collapse-1',
+                'menu_class'        => 'nav navbar-nav',
+                'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
+                'walker'            => new WP_Bootstrap_Navwalker())
+            );-->
 
 
                     </div>

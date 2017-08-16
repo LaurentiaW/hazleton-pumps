@@ -219,6 +219,8 @@ function hippo2018_register_theme_menus() {
 
 add_action('init', 'hippo2018_register_theme_menus');
 
+// Register Custom Navigation Walker
+require_once('wp-bootstrap-navwalker.php');
 
 	function hippo2018_theme_styles () {
 		wp_enqueue_style ('normalize_css', get_template_directory_uri() . '/assets/css/normalize.css' );
