@@ -48,10 +48,10 @@
                             <span class="title">Email Address</span>
                                 <span class="content">info@hazletonpumps.co</span>
                         </li>
-                        <li>
+                       <!-- <li>
                             <span class="title">Flameproof Certification</span>
                             <span class="content">IEC 60097-1:2005</span>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>

@@ -174,13 +174,13 @@ header .container{
 }
 .business-info ul li .title{
 	color: #858585;
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 600;
 	display: block;
 	margin-bottom: 5px;
 }
 .business-info ul li .content {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 700;
     display: block;
     color: #403f4c;
