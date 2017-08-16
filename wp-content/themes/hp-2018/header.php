@@ -109,9 +109,8 @@
                                 'menu' => 'primary',
                                 'theme_location' => 'primary',
                                 'depth'             => 2,
-                                'menu_class' => 'slicknav_nav slicknav_hidden',
+                                'menu_class' => 'nav navbar-nav',
                                 'menu_id' => 'menu',
-                                'aria-hidden'=>'true',
                                 'role' => 'menu',
                                 'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
                                 )
