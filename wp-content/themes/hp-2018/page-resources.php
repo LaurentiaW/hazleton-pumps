@@ -24,33 +24,26 @@
                                 <p><?php the_content(); ?></p>
                             </div>
                         </div>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-6">
-                               
-                                    <h4><a href="http://localhost/hp-2018/case-studies/"> Case Studies </a></h4>
-                                    <p>Please visit our case studies page to view our pumps and pumps systems in action in various industries and applications</p>
-                                </div>
-                                <div class="col-md-6">
-                                    <h4><a href="http://localhost/hp-2018/pump-curves/"> Pump Curves </a></h4>
-                                    <p>Our pump curves are handy guides in understading our pumps' capabilities.</p>
-                                
-                                </div>
-                            
-                            </div>
-                        </div>
-                        
-
-
-
                     </div>
-
+                    <div class="ws-50"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4><a href="http://localhost/hp-2018/case-studies/"> Case Studies </a></h4>
+                                <p>Please visit our case studies page to view our pumps and pumps systems in action in various industries and applications</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h4><a href="http://localhost/hp-2018/pump-curves/"> Pump Curves </a></h4>
+                                <p>Our pump curves are handy guides in understading our pumps' capabilities.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                        
                 <?php endwhile;?>
-                <div class="ws-40"></div>
-
-               
-</div>
-</div>
+            </div>
+        </div>
+        <div class="ws-80"></div>
 
 
         <?php get_footer(); ?>

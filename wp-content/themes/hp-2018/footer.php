@@ -22,7 +22,6 @@
                         <div class="col-md-3">
                             <div class="widget footer-about-widget">
                                 <h3>Hazleton Pumps</h3>
-                                <h4>Customise technology | Incomparable Quality</h4>
                                 <p>Hazleton Pumps develops and manufactures heavy duty pump and pump systems. Custom build and design for our clients' specific needs and requirements. Proudly made in South Africa and deployed worldwide.</p>
 
                                 <h4>Get in touch</h4>
@@ -113,6 +112,7 @@
 
                             <div class="col-md-6 col-md-pull-6">
                                 <div class="copyright">
+                                    <h4>Customise technology | Incomparable Quality</h4>
                                     <p>&copy;  2017 - All rights reserved </p>
                                 </div>
                             </div> <!-- col-md-6 -->

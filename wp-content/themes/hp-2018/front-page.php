@@ -136,14 +136,11 @@
                             <p>The award-winning Hippo Slurry Pump Range is the perfect workhorse to deal with the continuous and harsh demands of the mining and mineral processing industries. Custom built, the Hippo Slurry Pump Range provides pumping solutions that are robust, rugged, reliable and flexible. <br><br>The pumps capacities are extremely diverse and can assist in applications ranging from high-volume dewatering applications to settled out acidic and corrosive slurries. The Hippo Slurry Pump Range can be built to explosion-proof standard IEC 60097-1:2005 and is available in various formats and applications. Click here for more.... </p>
                         </div>
                         <div class="col-md-offset-1 col-md-3">
-                            <a href="http://localhost/hp-2018/hippo-range/">
+                            <a href="<?php echo home_url(); ?>/hippo-range">
                                  <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
-                            </div>
-                    </div>
-                    <div class="col-md-6 in-h-b-col">
-                                 <img class="center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">       
+                                 <img class="center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">   
                             </a>
-                        </div> 
+                        </div>
                      </div>
                 </div>
         </section>
@@ -388,7 +385,7 @@
          ==================================-->
 
 
-        <div class="ws-50"></div>
+       
         <hr>
 
         <section class="proudly">
@@ -404,19 +401,19 @@
                 </div>
                 <div class="ws-50"></div>
                 <div class="row">
-                    <div class="col-md-4 col-xs-3">
+                    <div class="col-md-4 col-xs-4">
                         <h6>Associated by</h6>
                         <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sapsda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
                     </div>
 
-                    <div class="col-md-4 col-xs-3">
+                    <div class="col-md-4 col-xs-4">
                         <h6>Accredited by</h6>
                         <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SABS.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
                     </div>
 
-                    <div class="col-md-4 col-xs-3">
+                    <div class="col-md-4 col-xs-4">
                         <h6>Awarded by</h6>
                         <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sassda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
 
@@ -427,5 +424,5 @@
 
              </div>   
         </section>
-        <div class="ws-50"></div>
+        <div class="ws-100"></div>
      <?php get_footer(); ?>

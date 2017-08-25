@@ -125,3 +125,10 @@ figcaption {
     font-weight: bolder;
     color: #403f4c;
   }
+
+/* footer */
+
+.copyright h4 {
+    text-transform: uppercase;
+}
+
