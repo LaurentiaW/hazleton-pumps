@@ -132,3 +132,7 @@ figcaption {
     text-transform: uppercase;
 }
 
+
+.icon img {
+  width: 120px;
+}

@@ -287,9 +287,9 @@
                  <ul class="ul no-spaces row">
                     <li class="list-col-md-3">
                         <div class="single-service">
-                          <div class="serv-img-wrap">
+                          <div class="serv-img-wrap icon">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                    <img class="img-responsive center-block icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Mining</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -299,7 +299,7 @@
                     </li>
 
                     <li class="list-col-md-3">
-                        <div class="single-service">
+                        <div class="single-service icon">
                             <div class="serv-img-wrap">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/nuclear.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
@@ -312,7 +312,7 @@
                     </li>
 
                     <li class="list-col-md-3">
-                        <div class="single-service">
+                        <div class="single-service icon">
                             <div class="serv-img-wrap">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/chemical.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
@@ -326,7 +326,7 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
+                            <div class="serv-img-wrap icon">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/foundries.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Foundries & Steel </h4>
@@ -339,7 +339,7 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
+                            <div class="serv-img-wrap icon">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/power.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Power Generation, Municapal Services, & Waste management</h4>
@@ -352,9 +352,9 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
+                            <div class="serv-img-wrap icon">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
+                                    <img class="img-responsive center-block icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Pulp, Paper & Sugar</h4>
                                     <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
                                 </a>
@@ -365,7 +365,7 @@
 
                     <li class="list-col-md-3">
                         <div class="single-service">
-                            <div class="serv-img-wrap">
+                            <div class="serv-img-wrap icon">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
                                     <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/sand.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
                                     <h4>Sand, Gravel, Ceramic & Steel Production</h4>
@@ -385,7 +385,7 @@
          ==================================-->
 
 
-       
+        <div class="ws-50"></div>
         <hr>
 
         <section class="proudly">
