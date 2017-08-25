@@ -170,7 +170,7 @@
                             $img = get_field ( 'img');
                             $size = "medium";
                             ?>
-                    <li class="list-col-md-4 center-block">
+                    <li class="col-md-4 col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6 center-block">
                         <div class="single-service">
                             <div class="serv-img-wrap">
                                <figure class="pump-systems-img">

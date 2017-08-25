@@ -132,12 +132,12 @@
 
 
                     </div>
-                    <div class="menu-row-search-box">
+                <!-- <div class="menu-row-search-box">
                         <form class="search" action="#">
                             <input type="search" placeholder="SEARCH">
                             <button type="submit"><i class='glyphicon glyphicon-search'></i></button>
                         </form>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </header>

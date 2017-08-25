@@ -126,6 +126,11 @@ figcaption {
     color: #403f4c;
   }
 
+.nav > li > a:hover, .nav > li > a:focus {
+  background-color: #fff;
+  text-decoration: none;
+}
+
 /* footer */
 
 .copyright h4 {
