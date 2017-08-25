@@ -39,12 +39,12 @@
                             <div class="widget widget_nav_menu">
                                 <h3>Quick links</h3>
                                 <ul>
-                                    <li><a href="http://localhost/hp-2018/pump-systems/">Pump Systems</a></li>
-                                    <li><a href="http://localhost/hp-2018/hippo-range/">Hippo Slurry Pump Range</a></li>
-                                    <li><a href="http://localhost/hp-2018/resources/">Resources</a></li>
-                                    <li><a href="http://localhost/hp-2018/case-studies/">Case Studies</a></li>
-                                    <li><a href="http://localhost/hp-2018/pump-curves/">Pump Curves</a></li>
-                                    <li><a href="http://localhost/hp-2018/press-releases/">Press</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/pump-systems">Pump Systems</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/hippo-range">Hippo Slurry Pump Range</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/resources">Resources</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/case-studies">Case Studies</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/pump-curves">Pump Curves</a></li>
+                                    <li><a href="<?php echo home_url(); ?>/press-releases">Press</a></li>
                                 </ul>
                             </div>
                         </div>  <!-- col-md-3 -->
