@@ -140,4 +140,36 @@ figcaption {
 
 .icon img {
   width: 120px;
+  height: auto;
 }
+
+#nf-form-1-cont { 
+width: 100%;
+ }
+
+ .ninja-forms-req-symbol {
+  visibility: hidden;
+}
+
+.nf-form-fields-required {
+  visibility: hidden;
+}
+
+#nf-field-4 {
+    background: #f8bf53;
+    color: #403f4c !important;
+    font-size: 12px;
+    display: inline-block;
+    padding: 14px 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
+    border-radius: 2px;
+    margin-top: 30px;
+    }
+
+    @media (min-width: 768px) {
+
+        #nf-form-1-cont { 
+        width: 65%;
+        }

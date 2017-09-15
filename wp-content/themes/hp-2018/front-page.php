@@ -66,7 +66,7 @@
 
         <section class="service-area">
 
-            <div class="ws-100"></div>
+            <div class="ws-50"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -121,7 +121,7 @@
 
          <section class="hippo-pump-range">
 
-            <div class="ws-100"></div>
+            <div class="ws-50"></div>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-12">
@@ -151,7 +151,7 @@
 
         <section class="pump-line-up">
 
-            <div class="ws-100"></div>
+            <div class="ws-50"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -174,7 +174,7 @@
                         <div class="single-service">
                             <div class="serv-img-wrap">
                                
-                                   <a href="http://localhost/hp-2018/hippo-range/">
+                                   <a href="<?php echo home_url(); ?>/hippo-range/">
 
                                     <?php  if($img ) { 
                                                     echo wp_get_attachment_image ($img, $size);
@@ -285,112 +285,44 @@
 
 
                  <ul class="ul no-spaces row">
-                    <li class="list-col-md-3">
-                        <div class="single-service">
-                          <div class="serv-img-wrap icon">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/mining.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Mining</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
+                    <?php query_posts('post_type=experience'); ?>
+                        <?php while ( have_posts() ) : the_post(); 
+                            $icon = get_field ( 'icon');
+                            $size = "medium";
+                            ?>
                     <li class="list-col-md-3">
                         <div class="single-service icon">
-                            <div class="serv-img-wrap">
+                          <div class="serv-img-wrap">
                                 <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/nuclear.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Nuclear</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
+
+                                        <?php  if($icon ) { 
+                                                    echo wp_get_attachment_image ($icon, $size);
+                                                } ?>   
+
+                                     
+                                    <h4><?php the_title();?></h4>
+                                    <p><?php the_content();?></p>
                                 </a>
                             </div>
                         </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
                     </li>
-
-                    <li class="list-col-md-3">
-                        <div class="single-service icon">
-                            <div class="serv-img-wrap">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/chemical.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Chemical & Processing</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
-                    <li class="list-col-md-3">
-                        <div class="single-service">
-                            <div class="serv-img-wrap icon">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/foundries.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Foundries & Steel </h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
-                    <li class="list-col-md-3">
-                        <div class="single-service">
-                            <div class="serv-img-wrap icon">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/power.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Power Generation, Municapal Services, & Waste management</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
-                    <li class="list-col-md-3">
-                        <div class="single-service">
-                            <div class="serv-img-wrap icon">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block icon" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/pulp.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Pulp, Paper & Sugar</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
-                    <li class="list-col-md-3">
-                        <div class="single-service">
-                            <div class="serv-img-wrap icon">
-                                <a href="<?php echo home_url(); ?>/case-studies/">
-                                    <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/industries/sand.png" alt="Mining is an industry in which Hazleton Pumps has experience in">
-                                    <h4>Sand, Gravel, Ceramic & Steel Production</h4>
-                                    <p>All sectoirs of Mining & Mineral extraction: coal, platinum, gold, iron & ore</p>
-                                </a>
-                            </div>
-                        </div>
-                        <!-- single service high head high volume medium high voltage pump systems -->
-                    </li>
-
+                 
+                
+                    <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                 </ul>
-
+                <hr>
             </div>
+
         </section>
+        <div class="ws-50"></div>
         <!--=================================
           =            PROUDLY            =
          ==================================-->
 
 
-        <div class="ws-50"></div>
-        <hr>
 
         <section class="proudly">
-
-            <div class="ws-50"></div>
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">

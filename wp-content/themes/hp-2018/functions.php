@@ -188,6 +188,22 @@ function create_custom_post_types() {
 				),
 			)
 		);
+
+	//front page experience by industry with the fa icons - frontpage custom post type 
+	register_post_type (
+		'experience',
+		array(
+			'labels' => array(
+				'name' => __( 'Experience' ),
+				'singular_name' => __('Experiences')
+				),
+			'public' => true,
+			'has_archive' => true,
+			'rewrite' => array(
+				'slug' => 'experience'
+				),
+			)
+		);
 }
 
 add_action ('init', 'create_custom_post_types' );
@@ -269,6 +285,81 @@ require_once('wp-bootstrap-navwalker.php');
 	}
 
 add_action ( 'wp_enqueue_scripts', 'hippo2018_theme_js');
+
+/**
+ * Register widget area.
+ */
+function hippo2018_widgets_init() {
+	register_sidebar( array(
+		'name'          => __( 'Widget Area'),
+		'id'            => 'sidebar-1',
+		'description'   => __( 'Add widgets here to appear in your contact page sidebar.' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Widget Footer'),
+		'id'            => 'sidebar-footer',
+		'description'   => __( 'Add widgets here to appear in your footer page sidebar.' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<div>',
+		'after_title'   => '</div>',
+	) );
+}
+add_action( 'widgets_init', 'hippo2018_widgets_init' );
+
+
+//Change the WordPress Login Page Logo
+function my_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/img/logo.png);
+		height:201px;
+		width:134px;
+		background-size: 201px 134px;
+		background-repeat: no-repeat;
+        	padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+/*
+The size of your logo should be no bigger than 80 x 80 pixels (though even this can change with custom CSS). Adjust the above padding-bottom value to the spacing you want between your logo and the login form.
+
+To change the link values so the logo links to your WordPress site, use the following WordPress hooks example; edit it and paste it below the previous in the functions.php:
+*/
+
+function my_login_logo_url() {
+    return home_url();
+}
+add_filter( 'login_headerurl', 'my_login_logo_url' );
+
+function my_login_logo_url_title() {
+    return 'Your Site Name and Info';
+}
+add_filter( 'login_headertitle', 'my_login_logo_url_title' );
+
+
+/* more function to customise the admin of the wordpress site */
+// remove administration page header logo
+function remove_admin_logo() {
+	echo '<style>img#header-logo { display: none; }</style>';
+}
+add_action('admin_head', 'remove_admin_logo');
+
+
+// change administration panel footer
+function change_footer_admin() {
+	echo 'For support, please <a href="mailto:hello@thedigitalfactory.nl">email</a> hello@thedigitalfactory.nl';
+}
+add_filter('admin_footer_text', 'change_footer_admin');
+
+
 
 ?>
 
