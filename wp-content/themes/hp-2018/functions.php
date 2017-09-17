@@ -304,8 +304,8 @@ function hippo2018_widgets_init() {
 		'name'          => __( 'Widget Footer'),
 		'id'            => 'sidebar-footer',
 		'description'   => __( 'Add widgets here to appear in your footer page sidebar.' ),
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
+		'before_widget' => '<div id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</div>',
 		'before_title'  => '<div>',
 		'after_title'   => '</div>',
 	) );
@@ -345,13 +345,13 @@ function my_login_logo_url_title() {
 add_filter( 'login_headertitle', 'my_login_logo_url_title' );
 
 
-/* more function to customise the admin of the wordpress site */
+/* more function to customise the admin of the wordpress site 
 // remove administration page header logo
 function remove_admin_logo() {
 	echo '<style>img#header-logo { display: none; }</style>';
 }
 add_action('admin_head', 'remove_admin_logo');
-
+*/
 
 // change administration panel footer
 function change_footer_admin() {
