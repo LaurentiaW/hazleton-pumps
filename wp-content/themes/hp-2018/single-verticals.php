@@ -43,8 +43,8 @@
                             <p><?php echo $intro; ?></p>
                         </div>
                         <div class="col-md-4 ">
-                            <figure class="center-block">
-                                <a href="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo" target="_blank">
+                            <figure class="pump-diag">
+                                
                                 <?php if($pump_diagram) { 
                                     echo wp_get_attachment_image ($pump_diagram, $size );
                                 } ?>
@@ -54,7 +54,7 @@
                                     ?>
                                 
                                 </figcaption>
-                                </a>
+
                             </figure>
                        
                         </div>

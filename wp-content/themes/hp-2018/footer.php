@@ -106,7 +106,7 @@
 
                             <div class="col-md-6 col-md-push-6">
                                 <div class="footer-logo">
-                                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/logowhite.png" alt="Hazleton Pumps Hippo Logo">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/logowhite.png" alt="Hazleton Pumps Hippo Logo">
                                 </div>
                             </div> <!-- col-md-6 -->
 

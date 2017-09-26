@@ -54,15 +54,15 @@
                     </div>
                     <div class="col-md-6">
                         <div class="about-us-right">
-                            <img src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/about/about-industry-update.jpg" alt="About Industry" class="img-responsive">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/about-industry-update.jpg" alt="About Industry" class="img-responsive">
                            
                             <div class="ws-20"></div>
                             <div class="row">
                                 <div class="col-xs-6">
-                                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/about/1.jpg" alt="About Industry" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about/1.jpg" alt="About Industry" class="img-responsive">
                                 </div>
                                 <div class="col-xs-6">
-                                    <img src="<?php echo get_bloginfo( 'template_directory' ); ?> /assets/img/about/2.jpg" alt="About Industry" class="img-responsive">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets//img/about/2.jpg" alt="About Industry" class="img-responsive">
                                 </div>
                             </div>
                         </div>

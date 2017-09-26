@@ -16,7 +16,7 @@
       <?php query_posts('post_type=hippo'); ?>
         <?php while ( have_posts() ) : the_post(); 
                     $sub_range_title = get_field ( 'sub_range_title');
-                    $sub_des = get_field ( 'sub_des' );
+                    $intro_sub = get_field ( 'intro_sub');
                 ?>
 
 		<div class="container">
@@ -24,7 +24,7 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1><?php echo $sub_range_title; ?></h1>
-                        <p><?php echo wp_trim_words($sub_des, 55); ?></p>
+                        <p><?php echo $intro_sub; ?></p>
                     </div>
                 </div>
             </div>

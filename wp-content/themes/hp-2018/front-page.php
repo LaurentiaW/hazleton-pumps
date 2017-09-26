@@ -71,7 +71,7 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h1>Pumping Systems</h1>
+                            <h1><a href="<?php echo home_url(); ?>/pump-systems/"> Pumping Systems</a></h1>
                         </div>
                     </div>
                 </div>
@@ -80,7 +80,7 @@
             <div class="well well-lg">
                 
                  <ul class="ul no-spaces row">
-                    <?php query_posts('posts_per_page=4&post_type=pump_systems'); ?>
+                    <?php query_posts('post_type=pump_systems'); ?>
                         <?php while ( have_posts() ) : the_post(); 
                             $diagram = get_field ( 'diagram');
                             $size = "medium";

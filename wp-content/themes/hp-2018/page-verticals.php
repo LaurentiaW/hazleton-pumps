@@ -16,7 +16,7 @@
       <?php query_posts('post_type=hippo'); ?>
         <?php while ( have_posts() ) : the_post(); 
                     $ver_range_title = get_field ( 'ver_range_title');
-                    $vertical_description = get_field ( 'vertical_description');
+                    $intro_ver = get_field ( 'intro_ver');
                 ?>
 
 		<div class="container">
@@ -24,7 +24,7 @@
                 <div class="col-md-12">
                     <div class="section-title">
                         <h1><?php echo $ver_range_title; ?></h1>
-                        <p><?php echo wp_trim_words($vertical_description, 50); ?></p>
+                        <p><?php echo $intro_ver; ?></p>
                     </div>
                 </div>
             </div>

@@ -120,6 +120,14 @@ figcaption {
   background-color: #bf2128;
 }
 
+  /*pump diagrams center */
+
+  .pump-diag img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  } 
+
 /* navigation */
 .menu-row-search-box form button {
     font-weight: bolder;
@@ -168,8 +176,19 @@ width: 100%;
     margin-top: 30px;
     }
 
+
+    @media (min-width: 550px) {
+      .footer-logo{
+    float: right;
+}
+
+    }
+
+
     @media (min-width: 768px) {
 
         #nf-form-1-cont { 
         width: 65%;
         }
+
+
