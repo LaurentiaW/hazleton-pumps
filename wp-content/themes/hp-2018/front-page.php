@@ -123,24 +123,38 @@
 
             <div class="ws-50"></div>
                 <div class="container">
+                    <?php query_posts('post_type=hippo'); ?>
+                        <?php while ( have_posts() ) : the_post(); 
+                         $subheading = get_field ( 'subheading');
+                         $hippo_logo = get_field ( 'hippo_logo');
+                         $hippo_pumps_picture = get_field ( 'hippo_pumps_picture');
+                          $size = "medium";
+                         ?>
                     <div class="row">
                         <div class="col-md-12">
                             <div class="section-title">
-                                <h1>The Hippo Slurry Pump Range</h1>
+                                <h1><?php the_title(); ?></h1>
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-7">
-                            <h3>Your ally in pumping corrosive and acidic slurries</h3>
-                            <p>The award-winning Hippo Slurry Pump Range is the perfect workhorse to deal with the continuous and harsh demands of the mining and mineral processing industries. Custom built, the Hippo Slurry Pump Range provides pumping solutions that are robust, rugged, reliable and flexible. <br><br>The pumps capacities are extremely diverse and can assist in applications ranging from high-volume dewatering applications to settled out acidic and corrosive slurries. The Hippo Slurry Pump Range can be built to explosion-proof standard IEC 60097-1:2005 and is available in various formats and applications. Click here for more.... </p>
+                            <h3><?php echo $subheading; ?></h3>
+                            <p><?php the_content(); ?></p>
                         </div>
                         <div class="col-md-offset-1 col-md-3">
                             <a href="<?php echo home_url(); ?>/hippo-range">
-                                 <img class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/hippo-logo.png" alt="The Hippo Slurry Pump Range Logo"> 
-                                 <img class="center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/ally-in-pumping-corrosive-liquids.png" alt="The Hippo Slurry Pump Range Logo">   
+                                <?php  if($hippo_logo ) { 
+                                                    echo wp_get_attachment_image ($hippo_logo, $size);
+                                                } ?>   
+                                 
+                                 <?php  if($hippo_pumps_picture ) { 
+                                                    echo wp_get_attachment_image ($hippo_pumps_picture, $size);
+                                                } ?>   
                             </a>
                         </div>
+                        <?php endwhile; ?> 
+                    <?php wp_reset_query(); ?>
                      </div>
                 </div>
         </section>
@@ -327,29 +341,45 @@
                 <div class="row">
                     <div class="col-md-12">
                         <div class="section-title">
-                            <h2>Proudly</h2>
+                            <h2>Proudly Associated With</h2>
                         </div>
                     </div>
                 </div>
                 <div class="ws-50"></div>
                 <div class="row">
-                    <div class="col-md-4 col-xs-4">
-                        <h6>Associated by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sapsda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
+                     <div class="col-md-2 col-md-offset-1 col-xs-4">
+                        <a href="http://sassda.co.za/" target="_blank">
+
+                            <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sassda.png" alt="Hazleton Pumps is associated with the SASSDA Southern African stainless Steel Association">
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-2  col-xs-4">
+                      <a href="http://www.flp.co.za/Home.aspx" target="_blank">
+                       <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SAFA.jpg" alt="Hazleton Pumps is associated with SAFA - Southern African Flameproof Association">
+                       </a>
+                    </div>
+
+                    <div class="col-md-2  col-xs-4">
+                        <a href="http://www.foundries.org.za/" target="_blank">
+                            <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SAIFM.jpg" alt="Hazleton Pumps is associated with SAIFM - The Southern African Foundrymen Association">
+                        </a>
+                    </div>
+
+                    <div class="col-md-2  col-xs-4">
+                        <a href="http://www.sapsda.co.za/" target="_blank">
+                            <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sapsda.jpg" alt="Hazleton Pumps is associated with SAPSDA - The Southern African Pump Systems Development Association">
+                        </a>
+                    </div>
+
+                    <div class="col-md-2  col-xs-4">
+                        <a href="http://www.saceec.com/" target="_blank">
+                            <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SCEEC.jpg" alt="Hazleton Pumps is associated with the SCEEC -  SA Capital Equipment Export Council">  
+                        </a>
 
                     </div>
 
-                    <div class="col-md-4 col-xs-4">
-                        <h6>Accredited by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/SABS.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
-
-                    </div>
-
-                    <div class="col-md-4 col-xs-4">
-                        <h6>Awarded by</h6>
-                        <img  class="img-responsive center-block" src="<?php echo get_template_directory_uri(); ?>/assets/img/proudly/sassda.png" alt="Hazleton Pumps is associated with the SAPSDA Southern African Pump Systems Development Association">
-
-                    </div>
+                   
                     
                 </div>
 

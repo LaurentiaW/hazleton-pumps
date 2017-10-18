@@ -177,6 +177,9 @@ width: 100%;
     }
 
 
+    
+
+
     @media (min-width: 550px) {
       .footer-logo{
     float: right;
@@ -190,5 +193,4 @@ width: 100%;
         #nf-form-1-cont { 
         width: 65%;
         }
-
 

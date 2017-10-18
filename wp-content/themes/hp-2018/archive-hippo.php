@@ -35,9 +35,47 @@
 
                     <div class="ws-40"></div>
 
+                    <ul class="ul no-spaces row">
+                   
+                    <li class="list-col-md-3">
+                        <div class="single-service icon">
+                          <div class="serv-img-wrap">
+                                <a href="#submersible">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/submersible-icon.gif">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-col-md-3">
+                        <div class="single-service icon">
+                          <div class="serv-img-wrap">
+                                <a href="#vertical">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vertical-icon.gif">
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                   <li class="list-col-md-3">
+                        <div class="single-service icon">
+                          <div class="serv-img-wrap">
+                                <a href="#horizontal">
+                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/horizontal-icon.gif">
+                                </a> 
+                            </div>
+                        </div>
+                    </li>
+       
+                </ul>
+
+                   
+                          
+                        
+                        
+               
+
                    <div class="row">
                     <div class="col-md-12">
-                        <h2><a href="http://localhost/hp-2018/submersibles/"><?php echo $sub_range_title; ?></a></h2>                          
+                        <h2 id="submersible"><a href="http://localhost/hp-2018/submersibles/"><?php echo $sub_range_title; ?></a></h2>                          
                     </div>
                 </div>
                  
@@ -52,14 +90,14 @@
                     </div>
 
                     <div class="col-md-8">
-                        <p><?php echo $sub_des; ?></p>
+                        <p ><?php echo $sub_des; ?></p>
                         <a class="btn btn-style1" href="http://localhost/hp-2018/submersibles/" role="button"><?php echo  $sub_button ?></a>
                     </div>
                 </div>
                 <div class="ws-40"></div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2> <a href="http://localhost/hp-2018/verticals/"><?php echo $ver_range_title; ?></a></h2>                          
+                        <h2 id="vertical"> <a href="http://localhost/hp-2018/verticals/"><?php echo $ver_range_title; ?></a></h2>                          
                     </div>
                 </div>
                 <div class="row">

@@ -34,9 +34,28 @@
 
                     <div class="ws-40"></div>
 
+                    <ul class="ul no-spaces row">
+                        <a href="#submersible">
+                            <li>
+                                <ul>
+                                    <li><?php echo $sub_range_title; ?></li>
+                                    <li><?php echo $sub_image; ?></li>    
+                                </ul>
+                            </li>
+                        </a>
+                        <a href="#vertical">
+                            <li>
+                                <ul>
+                                    <li><?php echo $ver_range_title; ?></li>
+                                    <li><?php echo $ver_image; ?></li>    
+                                </ul>    
+                            </li>
+                        </a>
+                    </ul>
+
                    <div class="row">
                     <div class="col-md-12">
-                        <h2><?php echo $sub_range_title; ?></h2>                          
+                        <h2 class="submersible"><?php echo $sub_range_title; ?></h2>                          
                     </div>
                 </div>
                  
@@ -55,7 +74,7 @@
                 <div class="ws-40"></div>
                 <div class="row">
                     <div class="col-md-12">
-                        <h2><?php echo $ver_range_title; ?></h2>                          
+                        <h2 class="vertical"><?php echo $ver_range_title; ?></h2>                          
                     </div>
                 </div>
                 <div class="row">
